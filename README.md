@@ -77,7 +77,7 @@ We continue reading data according to the datasheet. Once we read the 4th byte (
 
 #### Algorithm 
 
-We used the Cooley-Tukey Radix-2 FFT algorithm here. Since the math behind it is quite lengthy, here are the main highlights(From AI):
+We used the Cooley–Tukey Radix-2 FFT algorithm. Since the mathematical derivation is quite lengthy, the following section summarizes its key concepts. **The algorithm highlights below were generated with AI assistance.**
 
 * **Power-of-Two Requirement:** It requires the input signal length $N$ to be an integer power of two ($N = 128$ in our case).
 * **Divide-and-Conquer:** It recursively splits an $N$-point DFT into two $N/2$-point DFTs—one for even-indexed time samples and one for odd-indexed time samples (Decimation-in-Time, or DIT).
