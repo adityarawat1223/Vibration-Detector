@@ -77,12 +77,9 @@ We continue reading data according to the datasheet. Once we read the 4th byte (
 
 #### Algorithm 
 
-We used the Cooley–Tukey Radix-2 FFT algorithm. Since the mathematical derivation is quite lengthy, the following section summarizes its key concepts. **The algorithm highlights below were generated with AI assistance.**
-
-* **Power-of-Two Requirement:** It requires the input signal length $N$ to be an integer power of two ($N = 128$ in our case).
-* **Divide-and-Conquer:** It recursively splits an $N$-point DFT into two $N/2$-point DFTs—one for even-indexed time samples and one for odd-indexed time samples (Decimation-in-Time, or DIT).
-* **Twiddle Factors:** It combines the results of the smaller DFTs using complex exponential multipliers called twiddle factors ($e^{-2\pi j m / N}$).
-* **Butterfly Structure:** The addition and subtraction steps used to merge the sub-results form a characteristic cross-over pattern known as a butterfly diagram.
+We used the Cooley–Tukey Radix-2 FFT algorithm. Since the mathematical derivation is quite lengthy .
+Heres a good article about it :-
+[FFT](https://brianmcfee.net/dstbook-site/content/ch08-fft/FFT.html)
 
 ---
 
